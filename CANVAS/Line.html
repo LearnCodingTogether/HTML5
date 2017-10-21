@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MakingLineUsingCanvas</title>
+</head>
+<body>
+	<canvas id="MyCanvas" height="200" width="300" style="border: 1px solid">Your browser doecnt support Canvas</canvas>
+	<script type="text/javascript">
+		var c=document.getElementById('MyCanvas');
+		var t=c.getContext("2d");
+		t.moveTo(0,0);
+		t.lineTo(300,200);
+		t.stroke();
+
+
+	</script>
+
+</body>
+</html>

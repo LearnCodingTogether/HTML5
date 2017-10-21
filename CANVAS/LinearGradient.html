@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LinearGradient</title>
+</head>
+<body>
+<canvas id="MyCanvas" height="200" width="300" style="border: 1px solid">Your browser doecnt support Canvas</canvas>
+	<script type="text/javascript">
+		var c=document.getElementById('MyCanvas');
+		var t=c.getContext("2d");
+		var grd = t.createLinearGradient(0,0,300,0);
+		grd.addColorStop(0,"red");
+		grd.addColorStop(1,"white");
+		t.fillStyle=grd;
+		t.fillRect(10,10,280,180);
+
+
+	</script>
+</body>
+</html>
